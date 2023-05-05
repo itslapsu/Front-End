@@ -2,13 +2,21 @@
     display: flex;
     align-items: center;
 }
+
 .social-list .item {
     flex-shrink: 0;
     margin-right: 20px;
+    transition: .2s all;
 }
+
+.social-list .item:hover {
+    transform: translateY(-1px);
+}
+
 .social-list .item:last-child {
     margin-right: 0;
 }
+
 .social-list .item .icon {
     width: 30px;
     height: 30px;

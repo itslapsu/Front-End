@@ -31,7 +31,9 @@
 }
 .footer-nav .list .item {
     margin-right: 60px;
+
 }
+
 .footer-nav .list .item:last-child {
     margin-right: 0;
 }
