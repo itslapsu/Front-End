@@ -16,3 +16,40 @@
     padding-right: 10%;
     text-align: center;
 }
+
+@media screen and (max-width: 1024px) {
+    .section {
+        margin-bottom: 120px;
+    }
+    .section .title {
+        margin-bottom: 40px;
+    }
+    .section .subtitle {
+        margin-bottom: 50px;
+        font-size: 26px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .section {
+        margin-bottom: 80px;
+    }
+    .section .title {
+        margin-bottom: 30px;
+    }
+    .section .subtitle {
+        margin-bottom: 45px;
+        font-size: 22px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .section {
+        margin-bottom: 60px;
+    }
+    .section .title {
+        margin-bottom: 20px;
+    }
+    .section .subtitle {
+        margin-bottom: 40px;
+        font-size: 20px;
+    }
+}

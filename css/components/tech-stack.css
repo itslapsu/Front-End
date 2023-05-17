@@ -12,17 +12,17 @@
 }
 
 .tech-stack-section .tech-items {
-    width: 100%;
-}
-
-.tech-stack-section .tech-items {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .tech-stack-section .item {
-    flex-shrink: 0;
-    margin-right: 8%;
+    display: flex;
+    flex-basis: 16%;
+    max-width: 16%;
 }
 .tech-stack-section .item:last-child {
     margin-right: 0;
@@ -32,4 +32,25 @@
 }
 .tech-stack-section .tech-items .item img:hover {
     transform: translateY(3px);
+}
+
+@media screen and (max-width: 1024px) {
+    .tech-stack-section .item {
+        flex-basis: 20%;
+        max-width: 20%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .tech-stack-section .item {
+        flex-basis: 25%;
+        max-width: 25%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .tech-stack-section .item {
+        flex-basis: 33%;
+        max-width: 33%;
+    }
 }

@@ -1,6 +1,5 @@
 .about-me {
     margin-top: 140px;
-    margin-bottom: 140px;
 }
 
 .about-me .about-block {
@@ -28,6 +27,7 @@
 .about-me .item .duration-text,
 .about-me .item .type {
     font-size: 16px;
+    max-height: 38px;
 }
 
 .about-me .item-title-block,
@@ -64,4 +64,31 @@
     padding: 10px 30px;
     margin: 0 10px;
     border-radius: 90px;
+}
+
+@media screen and (max-width: 768px) {
+    .about-me .item .item-title {
+        max-width: 60%;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .about-me .item-title-block {
+        display: block;
+        text-align: center;
+    }
+
+    .about-me .item .item-title {
+        max-width: none;
+    }
+
+    .about-me .item-title-block .type {
+        max-width: 45%;
+        transform: translateX(50%);
+    }
+
+    .about-me .education-block .company {
+        display: none;
+    }
 }
