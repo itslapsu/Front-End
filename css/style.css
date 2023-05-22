@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap');
+@import "../assets/reset.css";
+@import "../css/fonts.css";
+@import "../css/common.css";
+@import "../css/components/main.css";
+@import "../css/pages/projects.css";
+
 * {
     font-family: 'DM Sans', sans-serif;
 }
@@ -28,8 +33,4 @@
 }
 .projects-section .inner article {
     width: 30%;
-}
-
-.footer .info {
-    display: flex;
 }

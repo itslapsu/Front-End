@@ -1,0 +1,24 @@
+@import "logo.css";
+@import "nav.css";
+@import "social-list.css";
+@import "header.css";
+@import "title.css";
+@import "section-hero.css";
+@import "section.css";
+@import "project-card.css";
+@import "section-projects.css";
+@import "footer.css";
+@import "tech-stack.css";
+@import "about-me.css";
+@import "input.css";
+@import "label.css";
+@import "button.css";
+@import "form.css";
+@import "select.css";
+
+.container {
+    max-width: 1260px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
