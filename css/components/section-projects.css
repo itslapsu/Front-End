@@ -1,3 +1,8 @@
+.projects-section {
+    transition: .3s;
+    transition-property: opacity;
+}
+
 .projects-section .inner {
     display: flex;
     justify-content: space-between;
@@ -9,14 +14,29 @@
     margin-bottom: 30px;
 }
 
+.projects-section .active > * {
+    flex-shrink: 0;
+    width: 50%;
+    flex-basis: 100%;
+    margin-bottom: 30px;
+}
+
+.projects-section .active .project-card {
+    display: flex;
+}
+
+.projects-section .active .project-card .img {
+    width: 50%;
+}
+
 @media screen and (max-width: 1024px) {
-    .projects-section .inner > * {
+    .projects-section .inner:not(.active) > * {
         flex-basis: 48%;
         width: 48%;
     }
 }
 @media screen and (max-width: 768px) {
-    .projects-section .inner > * {
+    .projects-section .inner:not(.active) > * {
         flex-basis: 100%;
         width: 100%;
     }
