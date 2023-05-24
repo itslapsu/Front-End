@@ -11,6 +11,7 @@
 @import "tech-stack.css";
 @import "about-me.css";
 @import "work-experience.css";
+@import "label.css";
 
 .container {
     max-width: 1260px;
