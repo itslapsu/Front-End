@@ -33,3 +33,7 @@
 .tech-stack-section .tech-items .item img:hover {
     transform: translateY(3px);
 }
+
+.tech-stack-index {
+    text-align: center;
+}
