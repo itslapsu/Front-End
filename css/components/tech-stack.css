@@ -21,6 +21,7 @@
 
 .tech-stack-section .item {
     display: flex;
+    justify-content: space-between;
     flex-basis: 16%;
     max-width: 16%;
 }
@@ -32,6 +33,10 @@
 }
 .tech-stack-section .tech-items .item img:hover {
     transform: translateY(3px);
+}
+
+.tech-stack-section.center{
+    text-align: center;
 }
 
 @media screen and (max-width: 1024px) {
@@ -50,7 +55,7 @@
 
 @media screen and (max-width: 480px) {
     .tech-stack-section .item {
-        flex-basis: 33%;
-        max-width: 33%;
+        flex-basis: 45%;
+        max-width: 45%;
     }
 }

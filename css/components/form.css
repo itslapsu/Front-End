@@ -1,5 +1,6 @@
 .form {
     margin-top: 89px;
+    margin-bottom: 36px;
 }
 
 .form > *:not(:last-child) {

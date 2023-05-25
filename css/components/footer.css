@@ -4,12 +4,13 @@
 
 .info {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     max-width: 50%;
     margin-left: 25%;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .info ul {
@@ -19,17 +20,22 @@
 
 .info ul .item {
     margin-right: 20px;
+    margin-top: 10px;
+}
+
+.footer .info .number,
+.footer .info .email {
+    margin-top: 14px;
 }
 
 .footer-nav .list {
     display: flex;
     justify-content: space-around;
     margin-bottom: 40px;
-    margin-top: 80px;
+    margin-top: 30px;
 }
 .footer-nav .list .item {
     margin-right: 60px;
-
 }
 
 .footer-nav .list .item:last-child {
@@ -61,17 +67,17 @@
 
     .footer-nav .list .item {
         margin-right: 0;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .footer .info {
-        display: block;
+        margin-top: 10px;
     }
 
-    .info .number,
-    .info .email {
-        display: block;
+    .footer .info{
+        justify-content: center;
+    }
+
+    .footer .info .number,
+    .footer .info .email {
+        flex-basis: 100%;
+        width: 100%;
         padding-bottom: 5px;
     }
 }
