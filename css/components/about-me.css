@@ -1,94 +1,12 @@
 .about-me {
     margin-top: 140px;
+    max-width: 900px;
 }
 
 .about-me .about-block {
     margin-bottom: 64px;
 }
 
-.about-me .work-experience-block {
-    margin-bottom: 38px;
-}
-
 .about-me .title {
     margin-bottom: 38px;
-}
-
-.about-me .item {
-    border-bottom: 2px solid #EBEAED;
-    margin-bottom: 35px;
-}
-
-.about-me .item .item-title {
-    font-size: 26px;
-}
-
-.about-me .item .company-name,
-.about-me .item .duration-text,
-.about-me .item .type {
-    font-size: 16px;
-    max-height: 38px;
-}
-
-.about-me .item-title-block,
-.about-me .item-info-block{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 14px;
-}
-
-.about-me .company,
-.about-me .item-duration-block {
-    display: flex;
-    margin-bottom: 14px;
-}
-
-.about-me .company img {
-    width: 15px;
-}
-
-.about-me .item-duration-block img {
-    width: 22px;
-}
-
-.about-me .company .company-name,
-.about-me .item-duration-block .duration-text {
-    color: #A7A7A7;
-    margin-left: 8px;
-}
-
-.about-me .item .type {
-    background-color: #D7FFE0;
-    color: #018C0F;
-    font-weight: bold;
-    padding: 10px 30px;
-    margin: 0 10px;
-    border-radius: 90px;
-}
-
-@media screen and (max-width: 768px) {
-    .about-me .item .item-title {
-        max-width: 60%;
-    }
-
-}
-
-@media screen and (max-width: 480px) {
-    .about-me .item-title-block {
-        display: block;
-        text-align: center;
-    }
-
-    .about-me .item .item-title {
-        max-width: none;
-    }
-
-    .about-me .item-title-block .type {
-        max-width: 45%;
-        transform: translateX(50%);
-    }
-
-    .about-me .education-block .company {
-        display: none;
-    }
 }

@@ -1,0 +1,75 @@
+.work-experience-block {
+    margin-bottom: 38px;
+}
+
+.work-experience {
+    border-bottom: 2px solid #EBEAED;
+    margin-bottom: 35px;
+}
+
+.work-experience .item-title {
+    font-size: 26px;
+}
+
+.work-experience .company-name,
+.work-experience .duration-text {
+    font-size: 16px;
+}
+
+.work-experience .item-title-block,
+.work-experience .item-info-block {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 14px;
+}
+
+.work-experience .company,
+.work-experience .item-duration-block {
+    display: flex;
+    margin-bottom: 14px;
+}
+
+.work-experience .company img {
+    width: 15px;
+}
+
+.work-experience .item-duration-block img {
+    width: 22px;
+}
+
+.work-experience .company .company-name,
+.work-experience .item-duration-block .duration-text {
+    color: #A7A7A7;
+    margin-left: 8px;
+}
+
+@media screen and (max-width: 1024px) {
+    .work-experience .item-title {
+        max-width: 60%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .work-experience .item-title {
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .work-experience .item-title-block {
+        flex-direction: column;
+    }
+
+    .work-experience .item-title {
+        max-width: none;
+    }
+
+    .work-experience .education-block .company {
+        display: none;
+    }
+
+    .work-experience .item-info-block {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
