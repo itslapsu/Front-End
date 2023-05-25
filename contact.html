@@ -4,118 +4,138 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./css/style.css">
     <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
 <body>
 <div class="container">
     <header class="header">
-        <a href="">
+        <div class="overlay"></div>
+        <a href="" class="logo">
             <img src="./images/svg/logo.svg" alt="">
         </a>
-        <nav>
-            <ul>
-                <li>
-                    <a href="./index.html">Home</a>
+        <nav class="nav">
+            <ul class="list">
+                <li class="item">
+                    <a class="link" href="./index.html">Home</a>
                 </li>
-                <li>
-                    <a href="">About</a>
+                <li class="item">
+                    <a class="link" href="./aboutme.html">About</a>
                 </li>
-                <li>
-                    <a href="">Tech Stack</a>
+                <li class="item">
+                    <a class="link" href="./my-tech-stack.html">Tech Stack</a>
                 </li>
-                <li>
-                    <a href="">Projects</a>
+                <li class="item">
+                    <a class="link" href="">Projects</a>
                 </li>
-                <li>
-                    <a href="./contact.html">Contact</a>
+                <li class="item">
+                    <a class="link" href="./contact.html">Contact</a>
                 </li>
             </ul>
         </nav>
-        <ul>
-            <li>
+        <ul class="social-list">
+            <li class="item">
                 <a href="">
-                    <img src="./images/svg/github.svg" alt="">
+                    <img class="icon" src="./images/svg/github.svg" alt="">
                 </a>
             </li>
-            <li>
+            <li class="item">
                 <a href="">
-                    <img src="./images/svg/twitter.svg" alt="">
+                    <img class="icon" src="./images/svg/twitter.svg" alt="">
                 </a>
             </li>
-            <li>
+            <li class="item">
                 <a href="">
-                    <img src="./images/svg/linkedin.svg" alt="">
+                    <img class="icon" src="./images/svg/linkedin.svg" alt="">
                 </a>
             </li>
         </ul>
+        <button class="nav-btn">
+            <span class="nav-btn-line"></span>
+            <span class="nav-btn-line"></span>
+            <span class="nav-btn-line"></span>
+        </button>
     </header>
     <section class="form-section">
-        <form action="">
-            <div>
-                <label for="name">Name:</label>
-                <input type="text" id="name">
+        <form action="" class="form">
+            <div class="form-row">
+                <div class="form-col">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name">
+                </div>
+                <div class="form-col">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email">
+                </div>
             </div>
-            <div>
-                <label for="email">Email:</label>
-                <input type="email" id="email">
+            <div class="form-row">
+                <div class="form-col">
+                    <label for="phone">Phone:</label>
+                    <input type="text" id="phone">
+                </div>
+                <div class="form-col">
+                    <label for="fax">Fax:</label>
+                    <input type="text" id="fax">
+                </div>
             </div>
-            <div>
-                <label for="phone">Phone:</label>
-                <input type="text" id="phone">
+            <div class="form-row flex-end">
+                <div class="form-col">
+                    <label for="description">Description:</label>
+                    <textarea name="description" id="description" cols="30" rows="10">
+
+</textarea>
+                </div>
             </div>
-            <div>
-                <label for="fax">Fax:</label>
-                <input type="text" id="fax">
+            <div class="form-row flex-end cols-auto">
+                <div class="form-col">
+                    <button class="button" type="submit">Send</button>
+                </div>
             </div>
-            <div>
-                <label for="description">Description:</label>
-                <textarea name="description" id="description" cols="30" rows="10"></textarea>
-            </div>
-            <button type="submit">Send</button>
         </form>
     </section>
     <footer class="footer">
         <div class="info">
-            <a href="tel:+91 12345 09876">+91 12345 09876</a>
-            <a href="mailto:info@example.com">info@example.com</a>
+            <a class="number" href="tel:+91 12345 09876">+91 12345 09876</a>
+            <a class="email" href="mailto:info@example.com">info@example.com</a>
             <ul>
-                <li>
+                <li class="item">
                     <a href="">
-                        <img src="./images/svg/github.svg" alt="">
+                        <img class="icon" src="./images/svg/github.svg" alt="">
                     </a>
                 </li>
-                <li>
+                <li class="item">
                     <a href="">
-                        <img src="./images/svg/twitter.svg" alt="">
+                        <img class="icon" src="./images/svg/twitter.svg" alt="">
                     </a>
                 </li>
-                <li>
+                <li class="item">
                     <a href="">
-                        <img src="./images/svg/linkedin.svg" alt="">
+                        <img class="icon" src="./images/svg/linkedin.svg" alt="">
                     </a>
                 </li>
             </ul>
         </div>
         <hr>
-        <nav>
-            <ul>
-                <li>
+        <nav class="footer-nav">
+            <ul class="list">
+                <li class="item">
                     <a href="./index.html">Home</a>
                 </li>
-                <li>
+                <li class="item">
                     <a href="">About</a>
                 </li>
-                <li>
+                <li class="item">
                     <a href="">Tech Stack</a>
                 </li>
-                <li>
+                <li class="item">
                     <a href="">Projects</a>
                 </li>
-                <li>
+                <li class="item">
                     <a href="./contact.html">Contact</a>
                 </li>
             </ul>
         </nav>
     </footer>
 </div>
+<script src="js/main.js"></script>
 </body>
 </html>
