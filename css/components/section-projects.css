@@ -40,4 +40,12 @@
         flex-basis: 100%;
         width: 100%;
     }
+
+    .projects-section .active .project-card {
+        display: block;
+    }
+    
+    .projects-section .active .project-card .img {
+        width: 100%;
+    }
 }

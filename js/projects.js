@@ -124,35 +124,12 @@ const projectsContainer = document.querySelector('.js-projects-container');
 const filtersForm = document.querySelector('.js-filters');
 const activeFilters = {};
 const btnForm = document.querySelector('.selector-btn')
-let btnActive = false
-let btnUse = false
 
 btnForm.addEventListener('click', () => {
-    if (btnUse === true) return
     if (document.querySelector('.no-item')) return
-
-    btnUse = true
-    projectsSection.style.opacity = '0';
-
-    if (btnActive === false) {
-        btnActive = true
-        btnForm.style.rotate = '90deg'
-    }
-    else {
-        btnActive = false
-        btnForm.style.rotate = '0deg';
-    }
-
-    setTimeout(() => {
-        projectsContainer.classList.toggle('active')
-        projectsSection.style.opacity = '1';
-        setTimeout(() => { btnUse = false }, 300)
-    },300)
+    projectsContainer.classList.toggle('active')
+    btnForm.style.rotate = `${projectsContainer.classList.contains('active') ? 90 : 0}deg`
 });
-
-const createNoFiltered = () => {
-    return `<p class="no-item">There are no items that satisfy the filter</p>`;
-};
 
 const createProjectTemplate = (project) => {
     return `
@@ -185,24 +162,21 @@ const createProjectTemplate = (project) => {
 </article>
 `;
 };
+
 const dataRender = (data, container) => {
     if (!(typeof data === 'object')) {
         return '';
     }
+    if (data.length === 0) return container.innerHTML = '<p class="no-item">There are no items that satisfy the filter</p>'
+
     let content = '';
     for (let i = 0; i < data.length; i++) {
         content += createProjectTemplate(data[i]);
     }
-    if (!content){
-        content += createNoFiltered();
-    }
 
-    projectsSection.style.opacity = '0';
-    setTimeout(() => {
-        container.innerHTML = content;
-        projectsSection.style.opacity = '1';
-    },300)
+    container.innerHTML = content;
 }
+
 const itemIsValid = (dataItem, activeFilters) => {
     let count = 0;
     for (const activeFilterKey in activeFilters) {
@@ -215,6 +189,7 @@ const itemIsValid = (dataItem, activeFilters) => {
     }
     return Object.keys(activeFilters).length === count;
 };
+
 const handleFormChange = (event) => {
     const target = event.target;
     const targetValue = target.value;
@@ -231,5 +206,6 @@ const handleFormChange = (event) => {
     const filteredData = data.filter((dataItem) => itemIsValid(dataItem, activeFilters));
     dataRender(filteredData, projectsContainer);
 };
+
 filtersForm.addEventListener('change', handleFormChange);
 dataRender(data, projectsContainer);
